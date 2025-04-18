@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Explorer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="search">
+            <input type="search" id="searchInput" placeholder="Search for News" />
+            <h1>Top stories for you</h1>
+        </header>
+
+        <section class="tags">
+            <button class="tag active" data-category="all">All</button>
+            <button class="tag" data-category="business">Business</button>
+            <button class="tag" data-category="politics">Politics</button>
+            <button class="tag" data-category="sport">Sports</button>
+            <button class="tag" data-category="entertainment">Entertainment</button>
+        </section>
+        <section id="newsCards"></section>
+        <div class="showMore">
+            <button id="showMoreBtn">Show More</button>
+        </div>
+    </div>
+
+    <script src="./newsDataset.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

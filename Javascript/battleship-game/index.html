@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battleship Game</title>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>Battleship</h1>
+      <div class="rules">
+        <h4>Game Rules</h4>
+        <ol>
+          <li>Click on the cells to reveal the image hidden behind them.</li>
+          <li>There are 5 ships hidden in the game.</li>
+          <li>
+            You win if you can find all ships in less than 8 clicks, else you
+            lose.
+          </li>
+        </ol>
+      </div>
+      <div id="game">
+        <div class="cell">
+          <img src="./ship.png" data-image="ship" alt="" />
+        </div>
+        <div class="cell">
+          <img src="./ship.png" data-image="ship" alt="" />
+        </div>
+        <div class="cell">
+          <img src="./water.webp" data-image="water" alt="" />
+        </div>
+        <div class="cell">
+          <img src="./ship.png" data-image="ship" alt="" />
+        </div>
+        <div class="cell">
+          <img src="./water.webp" data-image="water" alt="" />
+        </div>
+        <div class="cell">
+          <img src="./ship.png" data-image="ship" alt="" />
+        </div>
+        <div class="cell">
+          <img src="./water.webp" data-image="water" alt="" />
+        </div>
+        <div class="cell">
+          <img src="./water.webp" data-image="water" alt="" />
+        </div>
+        <div class="cell">
+          <img src="./water.webp" data-image="water" alt="" />
+        </div>
+        <div class="cell">
+          <img src="./water.webp" data-image="water" alt="" />
+        </div>
+        <div class="cell">
+          <img src="./water.webp" data-image="water" alt="" />
+        </div>
+        <div class="cell">
+          <img src="./water.webp" data-image="water" alt="" />
+        </div>
+        <div class="cell">
+          <img src="./water.webp" data-image="water" alt="" />
+        </div>
+        <div class="cell">
+          <img src="./water.webp" data-image="water" alt="" />
+        </div>
+        <div class="cell">
+          <img src="./water.webp" data-image="water" alt="" />
+        </div>
+        <div class="cell">
+          <img src="./ship.png" data-image="ship" alt="" />
+        </div>
+      </div>
+      <button id="resetBtn">Reset</button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="container">
+        <section class="password-generator">
+            <h1>Password Generator</h1>
+
+            <div class="password-display">
+                <input type="text" id="password" placeholder="Password" readonly />
+                <button id="copyBtn">Copy Password</button>
+            </div>
+
+            <div class="slider-section">
+                <label for="lengthSlider">Use the slider and select options to lengthen your password
+                    (6–24)</label>
+                <div class="slider-div">
+                    Total Characters:
+                    <input type="range" id="lengthSlider" min="6" max="24" value="9" />
+                    <strong id="lengthValue">9</strong>
+                </div>
+            </div>
+
+            <div class="checkboxes">
+                <label><input type="checkbox" id="numbers" checked /> Include Numbers</label>
+                <label><input type="checkbox" id="letters" checked /> Include Letters</label>
+                <label><input type="checkbox" id="mixed" checked /> Include Mixed Case</label>
+                <label><input type="checkbox" id="punctuation" checked /> Include Punctuation</label>
+            </div>
+        </section>
+
+        <section class="information">
+            <div class="info-block">
+                <h2>Do you use any of these weak passwords?</h2>
+                <ul>
+                    <li>Password</li>
+                    <li>123456</li>
+                    <li>Qwerty</li>
+                    <li>Your name</li>
+                </ul>
+            </div>
+            <div class="info-block">
+                <h2>Why are those passwords weak?</h2>
+                <ul>
+                    <li>They're easy to guess or crack.</li>
+                    <li>If one of your logins is compromised, a hacker can access all your services.</li>
+                </ul>
+            </div>
+        </section>
+
+        <p id="alert" class="alert"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

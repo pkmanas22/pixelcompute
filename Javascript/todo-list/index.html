@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>To-Do List</h1>
+            <div class="search-container">
+                <input type="search" id="searchBox" placeholder="Search tasks...">
+            </div>
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="taskText" placeholder="Add your to-do task...">
+            <input type="date" id="taskDate" placeholder="dd/mm/yyyy">
+            <input type="time" id="taskTime">
+            <button id="addBtn">Add Task</button>
+        </div>
+
+        <div class="task-container">
+            <h2 class="section-title">Due Tasks</h2>
+            <div id="dueTasks" class="task-list"></div>
+        </div>
+
+        <div id="taskEdit"></div>
+    </div>
+
+    <div class="modal" id="alertModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <p id="alertMessage">Please fill in all fields</p>
+            <button id="okBtn">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Invitation Creator Project</title>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/3d5eef6133.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Create an Event Invite</h1>
+      <form id="form">
+        <div>
+          <label for="name">Event Dame</label>
+          <input type="text" id="name" placeholder="Kerala JS Meetup" />
+        </div>
+        <div>
+          <label for="date">Event Date</label>
+          <input type="date" id="date" />
+        </div>
+        <div>
+          <label for="startTime">Start Time</label>
+          <input type="time" id="startTime" />
+        </div>
+        <div>
+          <label for="endTime">End Time</label>
+          <input type="time" id="endTime" />
+        </div>
+        <div>
+          <label for="description">Event description</label>
+          <textarea
+            id="description"
+            placeholder="Brief description of the event"
+          ></textarea>
+        </div>
+        <div>
+          <label for="location">Location</label>
+          <input
+            type="text"
+            id="location"
+            placeholder="Location of the event"
+          />
+        </div>
+        <button id="submitBtn" type="submit">Create Event</button>
+      </form>
+      <dialog id="alertDialog">
+        <button id="closeDialogBtn">x</button>
+        <div>Please fill all the details</div>
+      </dialog>
+    </div>
+    <div class="event">
+      <div class="center">
+        <h1>YOU ARE INVITED</h1>
+        <i>TO JOIN THE</i>
+        <h2 id="eventTitle"></h2>
+      </div>
+      <div class="desc">
+        <strong id="eventDate"></strong>
+        <p id="eventTime"></p>
+        <p id="eventLocation"></p>
+      </div>
+      <p id="eventDesc"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
